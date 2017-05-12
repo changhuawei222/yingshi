@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /data/
+Disallow: /moban/
+Disallow: /inc/
+Disallow: /view/
+Disallow: /?mode=show

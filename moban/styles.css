@@ -1,0 +1,236 @@
+/*
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+Coder: lsa, free.responsive.templates@gmail.com
+Created: 11 September 2012 
+*/
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Karla', serif;
+	font-size:100%;
+	background: url(siteBackground.jpg);
+	margin: 0;
+	padding: 0;
+	color: #5d5d5d;
+	/*text-shadow:0 0px, 1px 1px #ffffff;*/
+}
+h1 {
+	padding:20px 10px 30px 10px;
+	font-weight:inherit;
+	text-align:center;
+}
+h1 a {
+	font-size:1.2em; 
+	color:#5d5d5d;
+	font-family: 'Merienda One', cursive;
+	text-decoration:none;
+}
+h2 {
+	font-family:'Courgette', cursive;
+	font-size:1.1em;
+	color:#5d5d5d;
+	font-weight:inherit;
+	padding:0 5%;
+}
+a img { 
+	border: none;
+}
+a {
+	color: #1c6cbe;
+	text-decoration: underline; 
+}
+a:hover { 
+	color: #1c6cbe;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	width: auto;	
+}
+.wrapper {
+	width:93.75%;  
+	margin:0 auto;	
+}
+header {
+	text-align:center;
+}
+.boxes {
+	-webkit-column-count: 5;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;	
+	-moz-column-count: 5;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;	
+	column-count: 5;
+	column-gap: 15px;
+	column-fill: auto;
+}
+.box {
+	width:95%;
+	background:#ffffff;
+	display: inline-block;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	margin:0 0 10% 0;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.picPreview {
+	padding:5%;
+}
+.picPreview a:hover img {
+	box-shadow:0 0 12px 0 #45463d;
+}
+.box p {
+	padding: 5%;
+}
+.templateLink {
+	background:#dedede;
+	padding:5%;
+	text-align:center;
+}
+.templateLink a {
+	text-decoration:none;
+}
+footer {
+	text-align: center;
+	padding:30px 10px;
+	background:#dedede;
+	margin-top:20px;
+}
+footer p {
+	font-size:0.8571428571428571em; /* 12px/14px */
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	line-height: 0px;
+}
+/**************************/
+/*********************************Begin main menu****************************************/
+/**************************/
+nav {
+	background:#ffffff;
+	text-align:center;
+	padding:5px 0;
+	box-shadow:0 0 8px 0 #45463d;
+}
+nav li {
+	list-style:none;
+	display:inline;
+	padding:3px 10px;
+}
+nav li a {
+	font-size:1.2em;
+	color:#5d5d5d;
+	text-decoration: none;
+	font-family:'Courgette', cursive;
+}
+nav li a:hover {
+	color:#1c6cbe;
+}
+nav .active a {
+	color:#1c6cbe;
+}
+nav select {
+      display: none;
+    }
+select {
+	width:200px;
+}
+/**************************/
+/*********************************End main menu****************************************/
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 960px or less */
+@media screen and (max-width: 1024px) {
+	.wrapper {
+		width:93.75%; /* 960px/1024px  */
+		margin:0 auto;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 960px) {
+	.boxes {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}	
+	nav ul { display: none; }
+	nav select { display: inline-block; }
+}
+/* for 640px or less */
+@media screen and (max-width: 768px) {
+	.boxes {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}	
+	h1 a {
+		font-size:0.7em; 
+	}
+}
+/* for 480px or less */
+@media screen and (max-width: 640px) {
+	.boxes {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}	
+	h1 a {
+		font-size:0.7em; 
+	}
+}
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/
+
+div.menu ul  
+{  
+    list-style:none; /* 去掉ul前面的符号 */  
+    margin: 0px; /* 与外界元素的距离为0 */  
+    padding: 0px; /* 与内部元素的距离为0 */  
+    width: auto; /* 宽度根据元素内容调整 */  
+}  
+/* 所有class为menu的div中的ul中的li样式 */  
+div.menu ul li  
+{  
+    float:left; /* 向左漂移，将竖排变为横排 */  
+	margin: 5px;
+	width:70px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden; 
+}  
+/* 所有class为menu的div中的ul中的a样式(包括尚未点击的和点击过的样式) */  
+div.menu ul li img  
+{  
+    width:100%; /* 背景色 */  
+
+}  
+div.menu ul li a, div.menu ul li a:visited  
+{  
+    background:#dedede;
+	padding:5%;
+	text-align:center;
+    display: block; /* 此元素将显示为块级元素，此元素前后会带有换行符 */  
+    line-height: 1.35em; /* 行高 */  
+text-decoration: none; /* 不显示超链接下划线 */  
+
+}  
+/* 所有class为menu的div中的ul中的a样式(鼠标移动到元素中的样式) */  
+div.menu ul li a:hover  
+{  
+    background-color: #bfcbd6; /* 背景色 */  
+    color: #465c71; /* 文字颜色 */  
+}  
+/* 所有class为menu的div中的ul中的a样式(鼠标点击元素时的样式) */  
